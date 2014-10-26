@@ -14,6 +14,9 @@
 		9C1441B619FD8F7800D515DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1441B519FD8F7800D515DD /* Images.xcassets */; };
 		9C1441B919FD8F7800D515DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1441B719FD8F7800D515DD /* LaunchScreen.xib */; };
 		9C1441C519FD8F7900D515DD /* NSNotificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1441C419FD8F7900D515DD /* NSNotificationTests.m */; };
+		9C1441D519FD957A00D515DD /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1441D419FD957A00D515DD /* Settings.m */; };
+		9C1441D819FD95A100D515DD /* Option1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1441D719FD95A100D515DD /* Option1ViewController.m */; };
+		9C1441DB19FD95B300D515DD /* Option2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1441DA19FD95B300D515DD /* Option2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		9C1441BE19FD8F7800D515DD /* NSNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1441C319FD8F7800D515DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1441C419FD8F7900D515DD /* NSNotificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNotificationTests.m; sourceTree = "<group>"; };
+		9C1441D319FD957A00D515DD /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		9C1441D419FD957A00D515DD /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		9C1441D619FD95A100D515DD /* Option1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option1ViewController.h; sourceTree = "<group>"; };
+		9C1441D719FD95A100D515DD /* Option1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option1ViewController.m; sourceTree = "<group>"; };
+		9C1441D919FD95B300D515DD /* Option2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option2ViewController.h; sourceTree = "<group>"; };
+		9C1441DA19FD95B300D515DD /* Option2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +90,11 @@
 		9C1441A719FD8F7800D515DD /* NSNotification */ = {
 			isa = PBXGroup;
 			children = (
-				9C1441AC19FD8F7800D515DD /* AppDelegate.h */,
-				9C1441AD19FD8F7800D515DD /* AppDelegate.m */,
-				9C1441AF19FD8F7800D515DD /* ViewController.h */,
-				9C1441B019FD8F7800D515DD /* ViewController.m */,
-				9C1441B219FD8F7800D515DD /* Main.storyboard */,
-				9C1441B519FD8F7800D515DD /* Images.xcassets */,
-				9C1441B719FD8F7800D515DD /* LaunchScreen.xib */,
+				9C1441D219FD955600D515DD /* Classes */,
+				9C1441D119FD954100D515DD /* Controllers */,
+				9C1441D019FD953000D515DD /* Root */,
+				9C1441CF19FD951000D515DD /* Images */,
+				9C1441CE19FD94FD00D515DD /* UI */,
 				9C1441A819FD8F7800D515DD /* Supporting Files */,
 			);
 			path = NSNotification;
@@ -117,6 +124,54 @@
 				9C1441C319FD8F7800D515DD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C1441CE19FD94FD00D515DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9C1441B719FD8F7800D515DD /* LaunchScreen.xib */,
+				9C1441B219FD8F7800D515DD /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9C1441CF19FD951000D515DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C1441B519FD8F7800D515DD /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9C1441D019FD953000D515DD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9C1441AC19FD8F7800D515DD /* AppDelegate.h */,
+				9C1441AD19FD8F7800D515DD /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		9C1441D119FD954100D515DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C1441AF19FD8F7800D515DD /* ViewController.h */,
+				9C1441B019FD8F7800D515DD /* ViewController.m */,
+				9C1441D619FD95A100D515DD /* Option1ViewController.h */,
+				9C1441D719FD95A100D515DD /* Option1ViewController.m */,
+				9C1441D919FD95B300D515DD /* Option2ViewController.h */,
+				9C1441DA19FD95B300D515DD /* Option2ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C1441D219FD955600D515DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C1441D319FD957A00D515DD /* Settings.h */,
+				9C1441D419FD957A00D515DD /* Settings.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1441B119FD8F7800D515DD /* ViewController.m in Sources */,
+				9C1441D819FD95A100D515DD /* Option1ViewController.m in Sources */,
 				9C1441AE19FD8F7800D515DD /* AppDelegate.m in Sources */,
+				9C1441D519FD957A00D515DD /* Settings.m in Sources */,
+				9C1441DB19FD95B300D515DD /* Option2ViewController.m in Sources */,
 				9C1441AB19FD8F7800D515DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
