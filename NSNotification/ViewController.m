@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Settings.h"
 
 @interface ViewController ()
 
@@ -25,9 +26,10 @@
 
 
 #pragma mark - Notification Selectors
-- (void) notificationAction:(NSString *)notificationData {
-
-    NSLog(@"notificationAction ***** data = %@",notificationData);
+- (void) notificationAction:(NSNotification *)transientObject {
+    Settings *settings=transientObject.object;
+    
+    NSLog(@"======== Action: %@    data=%@",settings.message,settings.data);
 
     
 }

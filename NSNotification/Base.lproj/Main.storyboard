@@ -71,7 +71,7 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="segmentSelected:" destination="Fgx-rp-bg0" eventType="valueChanged" id="2B7-FX-7HM"/>
                                 </connections>

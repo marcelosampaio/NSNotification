@@ -7,6 +7,7 @@
 //
 
 #import "Option2ViewController.h"
+#import "Settings.h"
 
 @interface Option2ViewController ()
 
@@ -29,13 +30,14 @@
 
 #pragma mark - UI Actions
 - (IBAction)segmentSelected:(id)sender {
-
-
-    NSString *notificationMessage=[NSString stringWithFormat:@"Selected Segment is %d",self.segmentedControl.selectedSegmentIndex];
-    NSLog(@"--------> %@",notificationMessage);
+    NSString *message=[NSString stringWithFormat:@"Selected Segment is %d",self.segmentedControl.selectedSegmentIndex];
+    NSString *data=@"0";
+    Settings *settings=[[Settings alloc]initWithMessage:message data:data];
     
+    
+    NSLog(@"segmentedSelectedIndex=%d",self.segmentedControl.selectedSegmentIndex);
     // Post notification
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationObserver" object:notificationMessage];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationObserver" object:settings];
 }
 
 

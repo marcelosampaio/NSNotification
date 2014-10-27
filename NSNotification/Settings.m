@@ -9,5 +9,16 @@
 #import "Settings.h"
 
 @implementation Settings
+@synthesize message,data;
+
+
+- (id)initWithMessage:(NSString*)p_Message data:(NSString *)p_Data {
+    self = [super init];
+    if (self) {
+        message=p_Message;
+        data=p_Data;
+    }
+    return self;
+}
 
 @end

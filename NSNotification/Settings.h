@@ -10,4 +10,9 @@
 
 @interface Settings : NSObject
 
+@property (nonatomic,strong) NSString *message;
+@property (nonatomic,strong) NSString *data;
+
+- (id)initWithMessage:(NSString*)p_Message data:(NSString *)p_Data;
+
 @end
