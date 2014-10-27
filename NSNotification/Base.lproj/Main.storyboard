@@ -16,7 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBit" translatesAutoresizingMaskIntoConstraints="NO" id="SID-K0-P0x">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0039215688589999999" green="0.61568629740000003" blue="0.83921575550000005" alpha="1" colorSpace="deviceRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SID-K0-P0x"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="SID-K0-P0x"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="IOa-iK-9Ng">
                         <barButtonItem key="rightBarButtonItem" title="Proceed" id="jsz-uw-ZvV">
@@ -40,7 +58,25 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MRa-pO-wKh">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBit" translatesAutoresizingMaskIntoConstraints="NO" id="0Oy-0B-dPh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0039215688589999999" green="0.61568629740000003" blue="0.83921575550000005" alpha="1" colorSpace="deviceRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0Oy-0B-dPh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0Oy-0B-dPh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Option 1" id="8jB-3j-oh0">
                         <barButtonItem key="rightBarButtonItem" title="Proceed" id="jmn-jY-BbP">
@@ -65,6 +101,12 @@
                     <view key="view" contentMode="scaleToFill" id="OPM-Yv-17W">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBit" translatesAutoresizingMaskIntoConstraints="NO" id="FAZ-lb-baj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="416" height="600"/>
+                                </variation>
+                            </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j9j-Mm-N19">
                                 <rect key="frame" x="-61" y="-14" width="123" height="29"/>
                                 <segments>
@@ -85,6 +127,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="FAZ-lb-baj"/>
                                 <exclude reference="j9j-Mm-N19"/>
                             </mask>
                             <mask key="constraints">
@@ -95,6 +138,7 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="FAZ-lb-baj"/>
                                 <include reference="j9j-Mm-N19"/>
                             </mask>
                             <mask key="constraints">
@@ -131,4 +175,7 @@
             <point key="canvasLocation" x="427.5" y="321"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoBit" width="390" height="306"/>
+    </resources>
 </document>
