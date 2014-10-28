@@ -30,14 +30,9 @@
 
 #pragma mark - UI Actions
 - (IBAction)segmentSelected:(id)sender {
-    NSString *message=[NSString stringWithFormat:@"Selected Segment is %d",self.segmentedControl.selectedSegmentIndex];
-    NSString *data=@"0";
-    Settings *settings=[[Settings alloc]initWithMessage:message data:data];
-    
-    
     NSLog(@"segmentedSelectedIndex=%d",self.segmentedControl.selectedSegmentIndex);
     // Post notification
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationObserver" object:settings];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"notificationObserver" object:[[Settings alloc]initWithMessage:[NSString stringWithFormat:@"Selected Segment is %d",self.segmentedControl.selectedSegmentIndex] data:@"0"]];
 }
 
 

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xBG-WI-KKb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -57,6 +58,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pAt-5K-rGA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MRa-pO-wKh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBit" translatesAutoresizingMaskIntoConstraints="NO" id="0Oy-0B-dPh">
@@ -99,6 +101,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dTA-dU-nnA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OPM-Yv-17W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBit" translatesAutoresizingMaskIntoConstraints="NO" id="FAZ-lb-baj">
