@@ -29,7 +29,7 @@
 - (void) notificationAction:(NSNotification *)transientObject {
     Settings *settings=transientObject.object;
     
-    NSLog(@"======== Action: %@    data=%@",settings.message,settings.data);
+    NSLog(@"*** Action: %@    data=%@",settings.message,settings.data);
 
     UIAlertView *alertView=[[UIAlertView alloc]initWithTitle:@"Notification Center" message:[NSString stringWithFormat:@"%@.     \nData Length = %@.",settings.message,settings.data] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
